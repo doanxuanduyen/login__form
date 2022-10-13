@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/img/Logo BITC.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="content">
+        <header id="header">
+          <div class="logo">
+            <div class="logo__img">
+              <img src="./src/img/Logo .png" alt="" />
+            </div>
+            <div class="logo__name">
+              <p class="logo__name--name">BITC</p>
+              <p class="logo__name--slogan">fix bug overnight</p>
+            </div>
+          </div>
+          <div class="nav__home">
+            <p class="nav__title gray">home</p>
+          </div>
+          <div class="nav__join">
+            <p class="nav__title gray">join</p>
+          </div>
+          <div class="space"></div>
+        </header>
+        <section class="main__content">
+          <div class="header__tittle">
+            <p class="header__tittle--small gray">start for free</p>
+            <p class="header__tittle--big white">create new account</p>
+            <div class="header__tittle--sp gray">
+              already a member?
+              <a href="#">log in</a>
+            </div>
+          </div>
+          <div class="form gray font__size--small">
+            <div class="form__name">
+              <div class="first--name flex--center box">
+                <div class="form--content">
+                  <label for="first name">first name</label>
+                  <input type="text" placeholder="..." />
+                </div>
+                <i class="fa-solid fa-address-card"></i>
+              </div>
+              <div class="last--name flex--center box">
+                <div class="form--content">
+                  <label for="last name">last name</label>
+                  <input type="text" placeholder="..." />
+                </div>
+                <i class="fa-solid fa-address-card"></i>
+              </div>
+            </div>
+            <div class="form__email box flex--between width--40">
+              <div class="form--content">
+                <label for="email">email</label>
+                <input type="email" placeholder="..." />
+              </div>
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="form__password box flex--between width--40">
+              <div class="form__content">
+                <label for="password">password</label>
+                <input type="password" placeholder="..." />
+              </div>
+              <i class="fa-solid fa-eye"></i>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="btn__cancel">Join as guest</button>
+            <button class="btn__create">create account</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- animation text -->
+      <!-- <div class="animation">
+        <svg
+          width="289"
+          height="97"
+          viewBox="0 0 289 97"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.0454407 95V1.90908H38.8636C45.8333 1.90908 51.6667 2.89393 56.3636 4.86362C61.0909 6.83332 64.6363 9.5909 67 13.1364C69.3939 16.6818 70.5909 20.7879 70.5909 25.4545C70.5909 29 69.8485 32.1667 68.3636 34.9545C66.8788 37.7121 64.8333 40 62.2273 41.8182C59.6212 43.6364 56.606 44.9091 53.1818 45.6364V46.5454C56.9394 46.7273 60.4091 47.7424 63.5909 49.5909C66.803 51.4394 69.3788 54.0151 71.3182 57.3182C73.2576 60.5909 74.2273 64.4697 74.2273 68.9545C74.2273 73.9545 72.9545 78.4242 70.4091 82.3636C67.8636 86.2727 64.1818 89.3636 59.3636 91.6364C54.5454 93.8788 48.697 95 41.8182 95H0.0454407ZM22.5454 76.8636H36.4545C41.3333 76.8636 44.9242 75.9394 47.2273 74.0909C49.5606 72.2424 50.7273 69.6667 50.7273 66.3636C50.7273 63.9697 50.1667 61.9091 49.0454 60.1818C47.9242 58.4242 46.3333 57.0758 44.2727 56.1364C42.2121 55.1667 39.7424 54.6818 36.8636 54.6818H22.5454V76.8636ZM22.5454 40.1818H35C37.4545 40.1818 39.6364 39.7727 41.5454 38.9545C43.4545 38.1364 44.9394 36.9545 46 35.4091C47.0909 33.8636 47.6363 32 47.6363 29.8182C47.6363 26.697 46.5303 24.2424 44.3182 22.4545C42.106 20.6667 39.1212 19.7727 35.3636 19.7727H22.5454V40.1818Z"
+            fill="#1FDA7F"
+          />
+          <path
+            d="M107.545 1.90908V95H85.0454V1.90908H107.545Z"
+            fill="#1FDA7F"
+          />
+          <path
+            d="M118.625 20.1818V1.90908H197.307V20.1818H169.08V95H146.898V20.1818H118.625Z"
+            fill="#1FDA7F"
+          />
+          <path
+            d="M288.545 35.6364H265.818C265.515 33.303 264.894 31.197 263.955 29.3182C263.015 27.4394 261.773 25.8333 260.227 24.5C258.682 23.1667 256.848 22.1515 254.727 21.4545C252.636 20.7273 250.318 20.3636 247.773 20.3636C243.258 20.3636 239.364 21.4697 236.091 23.6818C232.848 25.8939 230.348 29.0909 228.591 33.2727C226.864 37.4545 226 42.5151 226 48.4545C226 54.6364 226.879 59.8182 228.636 64C230.424 68.1515 232.924 71.2879 236.136 73.4091C239.379 75.5 243.212 76.5454 247.636 76.5454C250.121 76.5454 252.379 76.2273 254.409 75.5909C256.47 74.9545 258.273 74.0303 259.818 72.8182C261.394 71.5758 262.682 70.0757 263.682 68.3182C264.712 66.5303 265.424 64.5151 265.818 62.2727L288.545 62.4091C288.152 66.5303 286.955 70.5909 284.955 74.5909C282.985 78.5909 280.273 82.2424 276.818 85.5454C273.364 88.8182 269.152 91.4242 264.182 93.3636C259.242 95.303 253.576 96.2727 247.182 96.2727C238.758 96.2727 231.212 94.4242 224.545 90.7273C217.909 87 212.667 81.5757 208.818 74.4545C204.97 67.3333 203.045 58.6667 203.045 48.4545C203.045 38.2121 205 29.5303 208.909 22.4091C212.818 15.2879 218.106 9.87878 224.773 6.18181C231.439 2.48484 238.909 0.636353 247.182 0.636353C252.818 0.636353 258.03 1.42423 262.818 2.99999C267.606 4.54544 271.818 6.81817 275.455 9.81817C279.091 12.7879 282.045 16.4394 284.318 20.7727C286.591 25.1061 288 30.0606 288.545 35.6364Z"
+            fill="#1FDA7F"
+          />
+        </svg>
+      </div> -->
+    </div>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
